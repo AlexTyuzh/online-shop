@@ -1,0 +1,20 @@
+.page-container {
+  padding: 20px 25px;
+  margin: auto;
+}
+
+.page-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 30px 0;
+  color: #2aa549;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.no-results {
+  text-align: center;
+  font-size: 1.2rem;
+  color: gray;
+  margin-top: 30px;
+}

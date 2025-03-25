@@ -1,0 +1,147 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  max-width: 250px;
+  width: 100%;
+  box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.card-img-container {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  max-width: 215px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card-img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.card-body {
+  margin: 0 1em;
+}
+
+.card-details {
+  line-height: 1.5em;
+  text-decoration: none;
+}
+
+.card-title {
+  font-weight: 400;
+}
+
+.card-categories {
+  text-decoration: none;
+  color: #1e8449;
+}
+
+.card-categories:hover {
+  text-decoration: underline;
+  color: #1e8449;
+}
+
+.card-prices {
+  display: flex;
+  margin: 1em 0em;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 3em;
+}
+
+.card-price-old {
+  font-size: 0.9rem;
+  text-decoration: line-through;
+  color: gray;
+}
+
+.card-price-new {
+  font-size: 1.6rem;
+}
+
+.card-soldout,
+.card-stock {
+  border-radius: 30px;
+  padding: 0.3em 1em;
+  color: white;
+}
+
+.card-soldout {
+  background-color: #c2aa89;
+}
+
+.card-stock {
+  background-color: #acc289;
+}
+
+.card-btns {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1em 0em;
+}
+
+.card-btn-buy {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 0.2em 1em;
+  gap: 0.5em;
+  font-size: 1rem;
+  border-radius: 30px;
+  background-color: #2aa549;
+  color: white;
+  fill: white;
+  border: 0;
+  cursor: pointer;
+}
+
+.card-btn-buy:hover {
+  background-color: #1e8449;
+}
+
+.card-btn-like {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-color: red;
+  /* padding: 0.2em 0.5em; */
+  border: none;
+}
+
+.card-btn-quantity {
+  display: flex;
+  align-items: center;
+  /* flex: 1; */
+  background: #f5f5f5;
+  padding: 0.5em 1em;
+  border-radius: 30px;
+  border: solid 1px #2aa54936;
+}
+
+.card-btn-quantity button {
+  background-color: transparent;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.card-btn-quantity span {
+  padding: 0 1em;
+  text-align: center;
+  border: none;
+  background: transparent;
+  font-size: 1rem;
+}

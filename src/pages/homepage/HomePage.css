@@ -1,0 +1,38 @@
+.homepage {
+  padding: 20px 25px;
+  max-width: 1280px;
+  margin: auto;
+}
+
+.homepage-title {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 30px 0;
+  color: #2aa549;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(215px, 100%), 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+@media (max-width: 768px) {
+  .product-list {
+    grid-template-columns: repeat(2, 1fr); /* Two cards per row */
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-list {
+    grid-template-columns: repeat(
+      2,
+      1fr
+    ); /* Ensures two per row on small screens */
+    gap: 10px;
+  }
+}
