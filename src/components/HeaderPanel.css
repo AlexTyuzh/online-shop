@@ -11,7 +11,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-
   padding: 10px 25px;
   max-width: 1280px;
   margin: auto;
@@ -91,8 +90,53 @@
   align-items: center;
 }
 
+@media (max-width: 768px) {
+  .cart-price {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 480px) {
   .burger-btn span {
     display: none;
+  }
+
+  .cart-btn span {
+    display: none;
+  }
+
+  .cart-quantity {
+    width: 0px;
+    font-size: 11px;
+    right: 18px;
+  }
+
+  .cart-btn {
+    padding: 6px 6px;
+    font-size: 1rem;
+  }
+
+  .burger-btn {
+    padding: 6px 10px;
+    font-size: 1rem;
+  }
+
+  .search-bar {
+    max-width: 200px;
+    height: 36px;
+  }
+
+  .search-bar-input {
+    font-size: 14px;
+    padding: 8px;
+  }
+
+  .search-icon svg {
+    width: 22px;
+    height: 22px;
+  }
+  .cart-btn svg {
+    width: 24px;
+    height: 24px;
   }
 }

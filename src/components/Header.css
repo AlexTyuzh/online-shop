@@ -9,10 +9,17 @@ header {
 }
 
 .header-logo {
-  width: 180px;
+  max-width: 180px;
+  width: 100%;
   transition: transform 0.3s ease-in-out;
 }
 
 .header-logo:hover {
   transform: scale(1.08);
+}
+
+@media (max-width: 480px) {
+  .header-logo {
+    max-width: 120px;
+  }
 }

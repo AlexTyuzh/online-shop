@@ -100,4 +100,10 @@
   .login-btn-open span {
     display: none;
   }
+
+  .login-btn-open {
+    padding: 8px 8px;
+    font-size: 0.6rem;
+    gap: 3px;
+  }
 }

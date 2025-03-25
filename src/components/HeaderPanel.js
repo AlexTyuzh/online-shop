@@ -52,7 +52,7 @@ const HeaderPanel = () => {
         <SearchBar />
         {/* <div className="cart-btn"> */}
         <Link className="cart-btn" to="/cart">
-          $ {(totalPrice ?? 0).toFixed(2)}
+          <span>$ {(totalPrice ?? 0).toFixed(2)}</span>
           <div className="cart-quantity">{totalQuantity ?? 0}</div>
           {/* <Link to="/cart"> */}
           <BasketIcon />

@@ -59,7 +59,7 @@ export default function Card({
             product={{ id, title, price, image, inStock }}
             quantity={quantity}
           >
-            ADD <BasketIcon />
+            <p>ADD</p> <BasketIcon />
           </BtnBuy>
           {/* <button
             className={`card-btn-like ${isLiked ? "liked" : ""}`}
