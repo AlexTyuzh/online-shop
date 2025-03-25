@@ -93,6 +93,13 @@
   color: #e74c3c;
 }
 
+@media (max-width: 768px) {
+  .contacts-container h3,
+  .contacts-container a {
+    display: none;
+  }
+}
+
 @media (max-width: 480px) {
   .contacts-container h3,
   .contacts-container a {

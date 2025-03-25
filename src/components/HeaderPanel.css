@@ -69,6 +69,8 @@
 .cart-btn {
   position: relative;
   display: flex;
+  min-width: 100px;
+  justify-content: space-between;
   align-items: center;
   background: none;
   color: white;
@@ -83,16 +85,17 @@
 .cart-quantity {
   position: absolute;
   display: flex;
+  width: 0px;
   top: 14px;
-  right: 22px;
+  right: 26px;
   color: white;
   justify-content: center;
   align-items: center;
 }
 
 @media (max-width: 768px) {
-  .cart-price {
-    font-size: 12px;
+  .search-bar {
+    max-width: 270px;
   }
 }
 
@@ -106,7 +109,6 @@
   }
 
   .cart-quantity {
-    width: 0px;
     font-size: 11px;
     right: 18px;
   }
@@ -114,6 +116,12 @@
   .cart-btn {
     padding: 6px 6px;
     font-size: 1rem;
+    min-width: 0;
+  }
+
+  .cart-btn svg {
+    width: 24px;
+    height: 24px;
   }
 
   .burger-btn {
@@ -134,9 +142,5 @@
   .search-icon svg {
     width: 22px;
     height: 22px;
-  }
-  .cart-btn svg {
-    width: 24px;
-    height: 24px;
   }
 }
